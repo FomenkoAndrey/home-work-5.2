@@ -1,9 +1,9 @@
-/* Blocks */
-
 @font-face {
   font-family: Starjedi;
   src: url(../fonts/Starjedi.ttf);
 }
+
+/* Blocks */
 
 .main-blocks {
   display: flex;
@@ -137,11 +137,14 @@
 .menu-item2,
 .menu-item3,
 .menu-item4 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   width: 100px;
   height: 420px;
   margin: 0 3vw;
+  padding-bottom: 30px;
 }
 
 .item-name1 {
@@ -212,11 +215,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-.menu-item1:hover {
-  outline: 1px solid rgba(202, 4, 3, 0.5);
-  outline-offset: -4px;
-}
-
 .menu-item1:hover .item-name1 {
   opacity: 0;
   transition: ease-in-out 0.4s;
@@ -227,8 +225,8 @@ a {
   transition: ease-in-out 0.4s;
 }
 
-.menu-item2:hover {
-  outline: 1px solid rgba(148, 4, 250, 0.5);
+.menu-item1:hover {
+  outline: 1px solid rgba(202, 4, 3, 0.3);
   outline-offset: -4px;
 }
 
@@ -242,8 +240,8 @@ a {
   transition: ease-in-out 0.4s;
 }
 
-.menu-item3:hover {
-  outline: 1px solid rgba(8, 219, 11, 0.3);
+.menu-item2:hover {
+  outline: 1px solid rgba(148, 4, 250, 0.3);
   outline-offset: -4px;
 }
 
@@ -257,8 +255,8 @@ a {
   transition: ease-in-out 0.4s;
 }
 
-.menu-item4:hover {
-  outline: 1px solid rgba(1, 101, 197, 0.5);
+.menu-item3:hover {
+  outline: 1px solid rgba(8, 219, 11, 0.2);
   outline-offset: -4px;
 }
 
@@ -272,10 +270,15 @@ a {
   transition: ease-in-out 0.4s;
 }
 
+.menu-item4:hover {
+  outline: 1px solid rgba(1, 101, 197, 0.3);
+  outline-offset: -4px;
+}
+
 .bg-red {
   height: 100vh;
-  width: 94px;
-  margin-left: 3px;
+  width: 30px;
+  margin-left: 1px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -295,8 +298,8 @@ a {
 
 .bg-violet {
   height: 100vh;
-  width: 94px;
-  margin-left: 3px;
+  width: 30px;
+  margin-left: 1px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -316,8 +319,8 @@ a {
 
 .bg-green {
   height: 100vh;
-  width: 94px;
-  margin-left: 3px;
+  width: 30px;
+  margin-left: 1px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -337,8 +340,8 @@ a {
 
 .bg-blue {
   height: 100vh;
-  width: 94px;
-  margin-left: 3px;
+  width: 30px;
+  margin-left: 1px;
   position: absolute;
   top: 0;
   z-index: -1;
